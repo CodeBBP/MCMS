@@ -180,10 +180,8 @@ public class ChannelParser extends IParser {
 	/**
 	 * 构造替换栏目标签的必须参数
 	 * 
-	 * @param htmlCotent
-	 *            HTML模版
-	 * @param newContent
-	 *            替换内容
+	 * @param htmlCotent  HTML模版
+	 * @param newContent 替换内容
 	 */
 	public ChannelParser(String htmlCotent, List<ColumnEntity> newContent, String page) {
 		// 在HTML模版中标记出要用内容替换的标签

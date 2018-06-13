@@ -251,10 +251,8 @@ public class ChannelParser extends IParser {
 	/**
 	 * 替换的数组内容
 	 * 
-	 * @param htmlCotent
-	 *            用标记标签替换好的HTML模版代码
-	 * @param newContent
-	 *            需要插入数组的内容
+	 * @param htmlCotent 用标记标签替换好的HTML模版代码
+	 * @param newContent 需要插入数组的内容
 	 * @return 如果存在该标签返回替换后的标签和内容，如果不存在则返回空
 	 */
 	private String tabContent(String htmlCotent, String newContent, String regex) {
@@ -276,8 +274,7 @@ public class ChannelParser extends IParser {
 	/**
 	 * 在替换好标签的HTML代码中将用标签替换的那段HTML代码截取出来
 	 * 
-	 * @param htmlCotent
-	 *            替换好标签后的HTML代码
+	 * @param htmlCotent 替换好标签后的HTML代码
 	 * @return 标签替换的那段HTML代码截取出来
 	 */
 	private String tabHtml(String htmlCotent) {
@@ -293,12 +290,9 @@ public class ChannelParser extends IParser {
 	 * 遍历文章数组，将取出的内容替换标签 [field.typeindex/]：栏目序号标签 [field.typetitle/]：栏目名称标签
 	 * [field.typelink/]：栏目链接标签
 	 * 
-	 * @param htmlCotent
-	 *            原HTML代码
-	 * @param articleList
-	 *            文章数组
-	 * @param webUrl
-	 *            网站连接地址
+	 * @param htmlCotent 原HTML代码
+	 * @param articleTypeList  文章数组
+	 * @param webUrl 网站连接地址
 	 * @return 用内容替换标签后的HTML代码
 	 */
 	private String articleTypeList(String htmlCotent, List<ColumnEntity> articleTypeList, String webUrl) {
@@ -344,8 +338,7 @@ public class ChannelParser extends IParser {
 	/**
 	 * 获取模版文件中栏目列表的个数
 	 * 
-	 * @param html
-	 *            文件模版
+	 * @param html 文件模版
 	 * @return 返回该字符串的个数
 	 */
 	public static int channelNum(String html) {
